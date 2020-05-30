@@ -234,3 +234,27 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  background: #000000;
+  color: #ffffff;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}

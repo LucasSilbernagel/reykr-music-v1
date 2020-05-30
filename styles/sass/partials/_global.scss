@@ -1,0 +1,23 @@
+body {
+  background: $black;
+  color: $white;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
