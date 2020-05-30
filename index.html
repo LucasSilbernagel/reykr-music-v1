@@ -11,76 +11,106 @@
   <!-- Import Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+  <!-- Import styles for Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Import stylesheet -->
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header>
+  <header id="header">
     <div class="wrapper">
-      <div class="logoContainer">
-        <div class="triadContainer">
-          <img src="./styles/assets/triad.png" alt="Reykr logo">
+      <div class="topBar">
+        <div class="logoContainer">
+          <div class="triadContainer">
+            <img src="./styles/assets/triad.png" alt="Reykr logo">
+          </div>
+          <div class="reykrContainer">
+            <img src="./styles/assets/reykr.png" alt="Reykr">
+          </div>
         </div>
-        <div class="reykrContainer">
-          <img src="./styles/assets/reykr.png" alt="Reykr">
-        </div>
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com/reykr.official/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/reykr.music" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/artist/4i5oaaegWPdDi8p3Dm23rJ" target="_blank" rel="noopener noreferrer" aria-label="spotify">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://soundcloud.com/reykr" target="_blank" rel="noopener noreferrer" aria-label="soundcloud">
+              <i class="fab fa-soundcloud"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://reykr.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="bandcamp">
+              <i class="fab fa-bandcamp"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="social">
-        <li>
-          <a href="https://www.instagram.com/reykr.official/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/reykr.music" target="_blank" rel="noopener noreferrer" aria-label="facebook">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/artist/4i5oaaegWPdDi8p3Dm23rJ" target="_blank" rel="noopener noreferrer" aria-label="spotify">
-            <i class="fab fa-spotify"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://soundcloud.com/reykr" target="_blank" rel="noopener noreferrer" aria-label="soundcloud">
-            <i class="fab fa-soundcloud"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://reykr.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="bandcamp">
-            <i class="fab fa-bandcamp"></i>
-          </a>
-        </li>
-      </ul>
+
+      <!-- Desktop Navigation -->
+      <nav class="mainNav">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#bio">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div class="hamburger">
+        <div id="navIcon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="mobileNav">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#bio">About</a></li>
+        </ul>
+      </div>
+
     </div>
   </header>
 
   <!-- Main -->
   <main>
     <div class="wrapper">
-      <ul>
-        <li>
+      <ul class="music" id="music">
+        <li data-aos="flip-left" data-aos-easing="ease-in-out">
           <div class="album1Container">
             <img src="./styles/assets/album1.jpg" alt="">
           </div>
           <iframe src="https://open.spotify.com/embed/album/31yaEoFjJgsywZOGvxpgwA" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </li>
-        <li>
+        <li data-aos="flip-right" data-aos-easing="ease-in-out">
           <div class="album2Container">
             <img src="./styles/assets/album2.jpg" alt="">
           </div>
           <iframe src="https://open.spotify.com/embed/album/4h8ztN0HAsdMVSgLp8uv7h" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </li>
-        <li>
+        <li data-aos="flip-left" data-aos-easing="ease-in-out">
           <div class="album3Container">
             <img src="./styles/assets/album3.jpg" alt="">
           </div>
           <iframe src="https://open.spotify.com/embed/album/6WJZTmAAsBkIUD7SClHX7c" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </li>
       </ul>
-      <section class="bio">
+      <section class="bio" id="bio" data-aos="flip-right" data-aos-easing="ease-in-out">
         <div class="bioPhotoContainer">
           <img src="./styles/assets/profilePhoto.jpg" alt="Reykr">
         </div>
@@ -95,5 +125,21 @@
       <p>Copyright 2020 <a href="https://lucassilbernagel.com/" target="_blank" rel="noopener noreferrer">Lucas Silbernagel</a></p>
     </div>
   </footer>
+
+    <!-- Import smooth scroll for anchor tags -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Import animate-on-scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize animate-on-scroll -->
+    <script>
+      AOS.init();
+    </script>
+  
+    <!-- Import jQuery -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+  <!-- Import JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
