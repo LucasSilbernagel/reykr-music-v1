@@ -1,9 +1,23 @@
+.music li,
+.bioPhotoContainer {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 .music li {
   margin-bottom: 50px;
   text-align: center;
 }
 
+.bioPhotoContainer {
+  margin: 0 auto;
+}
+
 main p {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.5rem;
   line-height: 1.7;
+  max-width: 500px;
 }

@@ -2,12 +2,14 @@ body {
   background: $black;
   color: $white;
   font-family: $mainFont;
+  cursor: default;
 }
 
 .wrapper {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  max-width: 1440px;
 }
 
 img {
