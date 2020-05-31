@@ -266,8 +266,60 @@ a {
   color: #ffffff;
 }
 
+.triadContainer {
+  max-width: 200px;
+}
+
+.reykrContainer {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2.5rem;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.social a:hover,
+.social a:focus {
+  color: #520000;
+}
+
 .mainNav {
   display: none;
+  font-size: 2rem;
+}
+
+.mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 380px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.mainNav a:hover,
+.mainNav a:focus {
+  color: #520000;
 }
 
 .hamburger {
@@ -379,21 +431,6 @@ a {
   left: 50%;
 }
 
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 2.5rem;
-}
-
-.social a:hover,
-.social a:focus {
-  color: #520000;
-}
-
 .music li {
   margin-bottom: 50px;
   text-align: center;
@@ -414,4 +451,32 @@ footer p {
 
 footer p a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+  .logoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1220px) {
+  .topBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
