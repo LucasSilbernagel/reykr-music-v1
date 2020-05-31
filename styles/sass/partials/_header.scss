@@ -19,6 +19,7 @@
     transition: all 0.4s ease-in;
     font-size: 2rem;
     text-align: center;
+    background: $accent;
   }
 
   .mobileNav li {
@@ -26,10 +27,10 @@
     padding-top: 10px;
   }
 
-  // .mobileNav li:hover,
-  // .mobileNav li:focus {
-  //   background: lighten($accent, 20%);
-  // }
+  .mobileNav li:hover,
+  .mobileNav li:focus {
+    background: $black;
+  }
 
   .mobileNav a {
     width: 100%;
@@ -58,6 +59,7 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+    z-index: 20;
   }
 
   #navIcon span {
@@ -65,7 +67,7 @@
     position: absolute;
     height: 9px;
     width: 100%;
-    background: $white;
+    background: $accent;
     border-radius: 9px;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -116,3 +118,13 @@
     width: 0%;
     left: 50%;
   }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  a:hover,
+  a:focus {
+    color: $accent;
+  }
+}

@@ -241,6 +241,12 @@ body {
   font-family: "Bebas Neue", cursive;
 }
 
+.wrapper {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -285,11 +291,17 @@ a {
   transition: all 0.4s ease-in;
   font-size: 2rem;
   text-align: center;
+  background: #520000;
 }
 
 .mobileNav li {
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.mobileNav li:hover,
+.mobileNav li:focus {
+  background: #000000;
 }
 
 .mobileNav a {
@@ -315,6 +327,7 @@ a {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  z-index: 20;
 }
 
 #navIcon span {
@@ -322,7 +335,7 @@ a {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #ffffff;
+  background: #520000;
   border-radius: 9px;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -364,4 +377,41 @@ a {
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2.5rem;
+}
+
+.social a:hover,
+.social a:focus {
+  color: #520000;
+}
+
+.music li {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+footer {
+  border-top: 1px solid #520000;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p a:hover {
+  text-decoration: underline;
 }

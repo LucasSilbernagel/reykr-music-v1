@@ -4,6 +4,12 @@ body {
   font-family: $mainFont;
 }
 
+.wrapper {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 img {
   width: 100%;
   max-width: 100%;
