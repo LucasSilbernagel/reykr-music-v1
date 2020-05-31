@@ -239,12 +239,14 @@ body {
   background: #000000;
   color: #ffffff;
   font-family: "Bebas Neue", cursive;
+  cursor: default;
 }
 
 .wrapper {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  max-width: 1440px;
 }
 
 img {
@@ -431,14 +433,28 @@ a {
   left: 50%;
 }
 
+.music li,
+.bioPhotoContainer {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 .music li {
   margin-bottom: 50px;
   text-align: center;
 }
 
+.bioPhotoContainer {
+  margin: 0 auto;
+}
+
 main p {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.5rem;
   line-height: 1.7;
+  max-width: 500px;
 }
 
 footer {
@@ -447,10 +463,27 @@ footer {
 
 footer p {
   text-align: center;
+  font-size: 1rem;
 }
 
 footer p a:hover {
   text-decoration: underline;
+}
+
+.up {
+  position: fixed;
+  right: 50px;
+  top: 520px;
+  font-size: 3rem;
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 50%;
+}
+
+.up:hover,
+.up:focus,
+.up:active {
+  color: #520000;
 }
 
 @media (min-width: 700px) {
@@ -468,6 +501,9 @@ footer p a:hover {
   }
   .hamburger {
     display: none;
+  }
+  .up {
+    visibility: visible;
   }
 }
 
