@@ -21,5 +21,8 @@
   .topBar {
     display: flex;
     flex-wrap: wrap;
+    .triadContainer {
+      padding-top: 10px;
+    }
   }
 }
