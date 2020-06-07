@@ -25,6 +25,17 @@ $(function () {
     }
   });
 
+  // Hide back to top button by default
+  $('#up').hide();
+  // Display back to top button on scroll
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 300) { // 300px from top
+			$('#up').fadeIn();
+		} else {
+			$('#up').fadeOut();
+		}
+	});
+
   // Smooth scroll
   const scroll = new SmoothScroll('a[href*="#"]');
 
