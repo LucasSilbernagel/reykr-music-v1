@@ -16,7 +16,8 @@ footer {
   font-size: 3rem;
   color: $white;
   visibility: hidden;
-  opacity: 50%;
+  opacity: 0%;
+  transition: 0.3s ease-in-out;
 }
 
 .up:hover,
