@@ -1,9 +1,12 @@
-// Document ready
-const navIcon = document.getElementById('navIcon');
-const mobileNav = document.getElementById('mobileNav');
+
+// Namespace
+const reykr = {}
+
+reykr.navIcon = document.getElementById('navIcon');
+reykr.mobileNav = document.getElementById('mobileNav');
 
 // Mobile menu functionality
-function hamburgerMenu() {
+reykr.hamburgerMenu = function () {
   // // On click, toggle mobile menu
   navIcon.addEventListener('click', function () {
     this.classList.toggle('open');
@@ -23,14 +26,14 @@ function hamburgerMenu() {
     const hamburger = document.getElementById('hamburger');
     const isClickInside = hamburger.contains(event.target);
     if (!isClickInside) {
-      mobileNav.classList.toggle('openNav');
-      navIcon.classList.toggle('open');
+      mobileNav.classList.remove('openNav');
+      navIcon.classList.remove('open');
     }
   });
 }
 
 // Back to top button
-function backToTop() {
+reykr.backToTop = function () {
   const up = document.getElementById('up');
   // Hide back to top button by default
   up.style.opacity = "0%";
@@ -46,13 +49,13 @@ function backToTop() {
 }
 
 // Smooth scroll
-function smoothScroll() {
+reykr.smoothScroll = function () {
   // Smooth scroll
   const scroll = new SmoothScroll('a[href*="#"]');
 }
 
 // Animate page elements on scroll
-function animateOnScroll() {
+reykr.animateOnScroll = function () {
   // animate-on-scroll
   AOS.init({
     // Global settings:
@@ -76,11 +79,13 @@ function animateOnScroll() {
   });
 }
 
-// Document ready
-function documentReady(func) {
-  document.addEventListener('DOMContentLoaded', func);
+// Initialize app
+reykr.init = function () {
+  reykr.hamburgerMenu();
+  reykr.backToTop();
+  reykr.smoothScroll();
+  reykr.animateOnScroll();
 }
-documentReady(hamburgerMenu);
-documentReady(backToTop);
-documentReady(smoothScroll);
-documentReady(animateOnScroll);
+
+// Document ready
+document.addEventListener('DOMContentLoaded', reykr.init);
